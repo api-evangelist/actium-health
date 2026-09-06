@@ -1,17 +1,37 @@
 aid: actium-health
 name: Actium Health
-description: 'Actium Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  ActiumHealth is the conversational AI platform for healthcare patient communication, operated
+  as a division of Syllable Corporation. Its voice, SMS, chat and email agents automate inbound
+  and outbound patient calls across appointment scheduling, prescription refill, call routing,
+  referral management, patient surveys, care coordination and revenue cycle workflows for health
+  systems, patient access centers, healthcare contact centers and practice groups, with more than
+  70 million calls reported handled. The agents integrate with Epic, Cerner and Meditech EHRs
+  through those vendors' APIs, and the platform is marketed as built to SOC 2, HITRUST and HIPAA
+  standards. ActiumHealth consumes EHR APIs rather than publishing one and runs no developer
+  program on actiumhealth.com; the underlying agentic platform API, SDKs, CLI, MCP server and
+  documentation are published by its parent at syllable.ai and catalogued here as `syllable`.
+image: https://www.actiumhealth.com/assets/images/social-share.png
 url: https://raw.githubusercontent.com/api-evangelist/actium-health/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment
+x-parent-company: Syllable Corporation
+position: Consuming
 specificationVersion: '0.20'
 created: '2026-09-06'
 modified: '2026-09-06'
 tags:
 - Company
+- Healthcare
+- Patient Engagement
+- Conversational AI
+- Voice
+- Contact Center
+- Artificial Intelligence
+- Patient Access
+- Health Systems
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,58 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.actiumhealth.com/
+- type: Blog
+  url: https://www.actiumhealth.com/blog/
+- type: Support
+  url: https://www.actiumhealth.com/contact/
+- type: PrivacyPolicy
+  url: https://www.actiumhealth.com/privacy-policy/
+- type: Demo
+  url: https://www.actiumhealth.com/demo/
+- type: CaseStudies
+  url: https://www.actiumhealth.com/case-studies/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/actiumhealth/
+- type: YouTube
+  url: https://www.youtube.com/@actiumhealth
+- type: DomainSecurity
+  url: security/actium-health-domain-security.yml
+- type: LLMsTxt
+  url: llms/actium-health-llms.txt
+- type: Conformance
+  url: conformance/actium-health-conformance.yml
+- type: Compliance
+  url: conformance/actium-health-conformance.yml
+- type: Plans
+  url: plans/actium-health-plans-pricing.yml
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    ActiumHealth is a division of Syllable Corporation - its own cookie policy says so
+    verbatim - and it runs no developer program on actiumhealth.com: a crawl of all 58
+    sitemap URLs returned zero occurrences of FHIR, HL7, OpenAPI, Swagger, GraphQL, "API
+    key" or "developer portal", no api./docs./developer./app. subdomain resolves, and all
+    eighteen /.well-known/ probes across the apex and www hosts 404d, while the platform's
+    actual API, SDKs, CLI, MCP server and agent card are published by the parent at
+    docs.syllable.ai and are already catalogued in this network as `syllable`.
+  evidence:
+  - url: https://www.actiumhealth.com/sitemap.xml
+    status: 200
+  - url: https://www.actiumhealth.com/openapi.json
+    status: 404
+  - url: https://www.actiumhealth.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.actiumhealth.com/cookie-policy/
+    status: 200
+  - url: https://api.actiumhealth.com/
+    status: 0
+  - url: https://docs.syllable.ai/
+    status: 200
+  checked: '2026-09-06'

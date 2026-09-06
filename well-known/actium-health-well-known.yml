@@ -1,0 +1,56 @@
+generated: '2026-09-06'
+method: probed
+source: live probes of every host this record knows, 2026-09-06
+summary: >-
+  No /.well-known/ document is served anywhere on the ActiumHealth estate. The registrable
+  domain and its www host were each probed for the nine named discovery paths and all
+  eighteen returned an honest 404 rendered by the site's own 404 template - there is no
+  security.txt, no api-catalog, no OIDC or OAuth discovery document, no ai-plugin.json,
+  no aauth-resource.json and no A2A agent card. actiumhealth.com is a marketing estate
+  with no API host: no api., docs., developer. or app. subdomain resolves, so there was
+  no additional baseURL or servers[] host to probe. Because every path 404d, this file
+  records an ABSENCE and no WellKnown or SecurityTxt pointer is wired into apis.yml.
+  ActiumHealth is a division of Syllable Corporation, and the discovery documents for the
+  underlying platform - including an A2A agent card at docs.syllable.ai - are served on
+  Syllable hosts and are recorded in the `syllable` record, not here.
+hosts:
+- host: actiumhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: www.actiumhealth.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404

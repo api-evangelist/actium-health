@@ -1,0 +1,53 @@
+generated: '2026-09-06'
+method: searched
+source: https://www.actiumhealth.com/products/
+summary: >-
+  ActiumHealth publishes compliance claims as marketing prose on its own product and
+  homepage - SOC 2, HITRUST and HIPAA - but serves no certificate, audit report, trust
+  portal or machine-readable attestation on actiumhealth.com. The corporate trust center
+  belongs to its parent, Syllable Corporation, at https://trust.syllable.ai (403 to an
+  ordinary crawler behind a bot challenge) and is recorded in the `syllable` record.
+  There is no API contract on this estate, so none of the contract-derived conformance
+  classes (oauth2, oidc, rfc9457, pagination, idempotency, json:api, odata) can be
+  asserted here - they are unknown, not false. No domain standard is declared anywhere
+  on the 58-page site: a full crawl found zero mentions of FHIR, HL7, SMART on FHIR or
+  X12, and the only API language on the estate is a FAQ sentence saying the platform
+  integrates with Epic, Cerner and Meditech "through APIs" - i.e. ActiumHealth consumes
+  EHR APIs rather than publishing a standard-conformant one.
+conformance:
+- id: soc2
+  conforms: true
+  basis: vendor-claim
+  evidence: https://www.actiumhealth.com/products/
+  note: >-
+    "Production-Grade Security & Compliance ... SOC2 HITRUST HIPAA" on the product page,
+    and "Trust a platform built to SOC2, HITRUST, and HIPAA standards" on the homepage.
+    Claim only - no SOC 2 report, bridge letter or audit period is published on this host.
+- id: hitrust
+  conforms: true
+  basis: vendor-claim
+  evidence: https://www.actiumhealth.com/why-actiumhealth/
+  note: >-
+    "HIPAA compliant and HITRUST certified. Reliable 99.9% uptime with 24/7 availability."
+    Claim only - no HITRUST CSF certification number or scope is published on this host.
+- id: hipaa
+  conforms: true
+  basis: vendor-claim
+  evidence: https://www.actiumhealth.com/why-actiumhealth/
+  note: >-
+    Stated on five pages, including "carries HIPAA and regulatory compliance built in".
+    A BAA is not published publicly; the claim is prose, not an attestation document.
+domain_standards:
+- id: fhir
+  conforms: false
+  evidence: https://www.actiumhealth.com/sitemap.xml
+  note: >-
+    Not declared. A crawl of all 58 sitemap URLs on 2026-09-06 returned zero occurrences
+    of FHIR, HL7, SMART on FHIR or X12. Healthcare integration is described only as
+    "APIs supporting Epic, Cerner, Meditech" on https://www.actiumhealth.com/why-actiumhealth/,
+    which names the vendors and not a standard. Reward-only check - recorded as an honest
+    absence, not a penalty.
+contract_derived: []
+note: >-
+  contract_derived is empty because ActiumHealth publishes no OpenAPI, AsyncAPI, GraphQL
+  SDL or any other machine-readable contract on its own estate. See x-coverage in apis.yml.

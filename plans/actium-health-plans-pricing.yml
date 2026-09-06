@@ -1,0 +1,18 @@
+generated: '2026-09-06'
+method: searched
+source: https://www.actiumhealth.com/roi-calculator/
+plan_count: 0
+currency: USD
+billing_model: custom-quote
+note: >-
+  ActiumHealth publishes no pricing page and no plans. A crawl of all 58 sitemap URLs on
+  2026-09-06 found no /pricing page - the closest surfaces are an ROI calculator
+  (https://www.actiumhealth.com/roi-calculator/, 200) that estimates savings from call
+  volume, and a contact/demo form (https://www.actiumhealth.com/contact/, 200). The
+  company states the model in prose on https://www.actiumhealth.com/why-actiumhealth/:
+  "Pricing is based on call volume and the features selected. Factors include the number
+  of locations, EHR integrations, and customization needs." That is an enterprise
+  contact-sales motion with no published tier, quota, overage or rate. An honest zero.
+  Its parent Syllable Corporation does publish a pricing page at https://syllable.ai/pricing;
+  that belongs to the `syllable` record, not to this one.
+plans: []

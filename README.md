@@ -64,5 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Actium Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+ActiumHealth is the conversational AI platform for healthcare patient communication, operated as a
+division of Syllable Corporation. Its voice, SMS, chat and email agents automate inbound and outbound
+patient calls across appointment scheduling, prescription refill, call routing, referral management,
+patient surveys, care coordination and revenue cycle workflows for health systems, patient access
+centers, healthcare contact centers and practice groups.
+
+ActiumHealth **consumes** EHR APIs (Epic, Cerner, Meditech) rather than publishing one. A crawl of all
+58 URLs in its sitemap on 2026-09-06 found no developer portal, API reference, machine-readable
+specification, SDK or webhook surface, and no `api.`, `docs.`, `developer.` or `app.` subdomain
+resolves. All eighteen `/.well-known/` probes across `actiumhealth.com` and `www.actiumhealth.com`
+returned 404. The developer program for the underlying agentic platform is published by its parent at
+[syllable.ai](https://syllable.ai/) and [docs.syllable.ai](https://docs.syllable.ai/), and is
+catalogued separately in this network as **[syllable](https://github.com/api-evangelist/syllable)** —
+it is deliberately not duplicated here.
+
+- https://www.actiumhealth.com/
