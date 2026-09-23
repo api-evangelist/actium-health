@@ -1,0 +1,30 @@
+# Front Door AI Index — actium-health — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: actium-health
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.actiumhealth.com
+  final_host: www.actiumhealth.com
+  ownership: own
+  owner: actium-health
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 43
+  host_score: 43
+  density: 48.53
+  words: 886
+  tiers:
+    agentic: 18
+    core: 25
+    model: 0
+  ambiguous: 15
+  top_terms:
+    AI: 25
+    agent: 12
+    AI agent: 11
+    conversational AI: 7
+    automation: 2
+    predictive: 1
