@@ -64,19 +64,88 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ActiumHealth is the conversational AI platform for healthcare patient communication, operated as a
-division of Syllable Corporation. Its voice, SMS, chat and email agents automate inbound and outbound
-patient calls across appointment scheduling, prescription refill, call routing, referral management,
-patient surveys, care coordination and revenue cycle workflows for health systems, patient access
-centers, healthcare contact centers and practice groups.
+ActiumHealth is the conversational AI platform for healthcare patient communication, operated as a division of Syllable Corporation. Its voice, SMS, chat and email agents automate inbound and outbound patient calls across appointment scheduling, prescription refill, call routing, referral management, patient surveys, care coordination and revenue cycle workflows for health systems, patient access centers, healthcare contact centers and practice groups, with more than 70 million calls reported handled. The agents integrate with Epic, Cerner and Meditech EHRs through those vendors' APIs, and the platform is marketed as built to SOC 2, HITRUST and HIPAA standards. ActiumHealth consumes EHR APIs rather than publishing one and runs no developer program on actiumhealth.com; the underlying agentic platform API, SDKs, CLI, MCP server and documentation are published by its parent at syllable.ai and catalogued here as `syllable`.
 
-ActiumHealth **consumes** EHR APIs (Epic, Cerner, Meditech) rather than publishing one. A crawl of all
-58 URLs in its sitemap on 2026-09-06 found no developer portal, API reference, machine-readable
-specification, SDK or webhook surface, and no `api.`, `docs.`, `developer.` or `app.` subdomain
-resolves. All eighteen `/.well-known/` probes across `actiumhealth.com` and `www.actiumhealth.com`
-returned 404. The developer program for the underlying agentic platform is published by its parent at
-[syllable.ai](https://syllable.ai/) and [docs.syllable.ai](https://docs.syllable.ai/), and is
-catalogued separately in this network as **[syllable](https://github.com/api-evangelist/syllable)** —
-it is deliberately not duplicated here.
+**Areas:** Company · Healthcare · Patient Engagement · Conversational AI · Voice · Contact Center · Artificial Intelligence · Patient Access · Health Systems
 
-- https://www.actiumhealth.com/
+## Actium Health on APIs.io
+
+Everything profiled for Actium Health is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/actium-health/](https://apis.io/providers/actium-health/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Actium Health Domain Security](https://apis.io/security/actium-health/actium-health-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Actium Health Plans Pricing](https://apis.io/plans/actium-health/actium-health-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.actiumhealth.com/)
+- [Support](https://www.actiumhealth.com/contact/)
+- [Blog](https://www.actiumhealth.com/blog/)
+- [Privacy policy](https://www.actiumhealth.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 13.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.1** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/actium-health/](https://apis.io/providers/actium-health/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Actium Health: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/actium-health/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
